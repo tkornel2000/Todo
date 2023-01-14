@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register user</title>
 </head>
 <body>
-
+<div>
+    <h2>Register new user</h2>
+    <form action="/succesfullyAdded" method="post">
+        <p>Username: <input type="text" name="username"></p>
+        <p>Firstname: <input type="text" name="firstname"></p>
+        <p>Lastname: <input type="text" name="lastname"></p>
+        <p><input type="radio" name="sex" value="male">Male
+            <input type="radio" name="sex" value="famale">Famale
+        </p>
+        <button type="submit">Save</button>
+    </form>
+</div>
 </body>
 </html>
