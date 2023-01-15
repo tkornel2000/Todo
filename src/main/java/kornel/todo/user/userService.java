@@ -25,5 +25,10 @@ public class userService {
         repo.save(User);
     }
 
+    public void delete(Integer id){
+        repo.deleteById(id);
+    }
+
+
 
 }

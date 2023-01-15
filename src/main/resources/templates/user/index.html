@@ -21,7 +21,7 @@
         <tbody>
         <tr th:each="user:${listUsers}">
             <td>[[${user.id}]]</td>
-            <td>[[${user.username}]]</td>
+            <td><a th:href="@{${user.id} + '/todo'}">[[${user.username}]]</a></td>
             <td>[[${user.firstname}]]</td>
             <td>[[${user.lastname}]]</td>
             <td>[[${user.sex}]]</td>
@@ -33,7 +33,13 @@
         </tr>
         </tbody>
     </table>
-    <a href="/user/addNewUser">Add new user</a>
+    <div>
+        <a href="/user/addNewUser">Add new user</a>
+    </div>
+    <div>
+        <a href="/todo/allTodo">See all todo</a>
+    </div>
+
 </div>
 
 </body>

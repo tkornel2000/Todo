@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit todo</title>
+</head>
+<body>
+<div>
+  <h2>Edit todo</h2>
+  <form action="/todo/succesfullyEdited" method="post" th:object="${todo}">
+    <input type="hidden" th:field="*{id}">
+    <input type="hidden" th:field="*{usernameID}">
+    <p>Todo name: <input type="text" th:field="*{name}"></p>
+    <p>Todo description: <input type="text" th:field="*{description}"></p>
+    <p>Ready: <input type="checkbox" th:field="*{ready}"></p>
+
+    <button type="submit">Save</button>
+  </form>
+</div>
+</body>
+</html>
