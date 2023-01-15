@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit user</title>
+</head>
+<body>
+<div>
+  <h2>Register new user</h2>
+  <form action="/user/succesfullyEdited" method="post" th:object="${user}">
+    <input type="hidden" th:field="*{id}">
+    <p>Username: <input type="text" th:field="*{username}"></p>
+    <p>Firstname: <input type="text" th:field="*{firstname}"></p>
+    <p>Lastname: <input type="text" th:field="*{lastname}"></p>
+    <p><input type="radio" th:field="*{sex}" value="male">Male
+      <input type="radio" th:field="*{sex}" value="famale">Famale
+    </p>
+    <button type="submit">Save</button>
+  </form>
+</div>
+</body>
+</html>
