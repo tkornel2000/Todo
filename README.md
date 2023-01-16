@@ -21,3 +21,6 @@ Az projekt működése:
   * todo name- 30 karakter van a todo címének meghatározására
   * todo description - 400 karakter van rá, hogy jellemezzük
   * ready- ez azt mutatja, hogy az adott todo teljesölt-e vagy nem. Itt a todo létrehozásánál ez a mező automatikusan hamis, és ezt az edit funkcióval lehet módosítani
+
+Buildelés és futtatás:
+todo-master->src->main->
