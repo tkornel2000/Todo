@@ -23,4 +23,4 @@ Az projekt működése:
   * ready- ez azt mutatja, hogy az adott todo teljesölt-e vagy nem. Itt a todo létrehozásánál ez a mező automatikusan hamis, és ezt az edit funkcióval lehet módosítani
 
 Buildelés és futtatás:
-todo-master->src->main->
+todo-master->src->main->java/kornel/todo->
